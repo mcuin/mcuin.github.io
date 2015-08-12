@@ -1,0 +1,21 @@
+{
+  "name": "mcuin.github.io",
+  "version": "0.0.0",
+  "homepage": "https://github.com/mcuin/mcuin.github.io",
+  "authors": [
+    "Mykal Cuin <mykcuin@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.0.0",
+    "paper-menu": "PolymerElements/paper-menu#~1.1.0",
+    "iron-menu-behavior": "PolymerElements/iron-menu-behavior#~1.0.1"
+  }
+}
