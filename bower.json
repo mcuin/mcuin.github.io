@@ -15,8 +15,7 @@
   ],
   "dependencies": {
     "polymer": "Polymer/polymer#^1.0.0",
-    "paper-menu": "PolymerElements/paper-menu#~1.1.0",
-    "iron-menu-behavior": "PolymerElements/iron-menu-behavior#~1.0.1",
+    "iron-elements": "PolymerElements/iron-elements#~1.0.3",
     "paper-elements": "PolymerElements/paper-elements#~1.0.4"
   }
 }
