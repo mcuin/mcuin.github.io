@@ -4,11 +4,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title>Mykal Cuin</title>
-    <link rel="import" href="menu.html">
+    <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+    <link rel="import" src="bower_components/paper-header-panel/paper-header-panel.html">
+    <link rel="import" src="bower_components/paper-toolbar/paper-toolbar.html">
+    <link rel="import" src="bower_components/paper-tabs/paper-tabs.html">
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        font-family: sans-serif;
+      }
+      paper-header-panel {
+        height: 100%;
+        overflow: auto;
+	-webkit-overflow-scrolling: touch;
+      }
+      paper-toolbar {
+ 	--paper-toolbar-background: #2196F3
+        --paper-toolbar-color: #FFFFFF
+      }
+      #tabs {
+        
+    </style>
   </head>
   <body>
     <div id="menu">
-      <paper-menu></paper-menu>
+      <paper-header-panel>
+        <paper-toolbar>
+          <paper-tabs id="tabs" selected="home" self-end>
+     	    <paper-tab name="home">Home</paper-tab>
+  	    <paper-tab name="about">About</paper-tab>
+    	    <paper-tab name="projects">Projects</paper-tab>
+          </paper-tabs>
+      </paper-header-panel>
     </div>
     Hello World
   </body>
