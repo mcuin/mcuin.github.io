@@ -17,14 +17,20 @@
       paper-header-panel {
         height: 100%;
         overflow: auto;
-	-webkit-overflow-scrolling: touch;
+	--webkit-overflow-scrolling: touch;
       }
       paper-toolbar {
- 	--paper-toolbar-background: #2196F3
-        --paper-toolbar-color: #FFFFFF
+ 	background: #2196F3;
+        color: #FFFFFF;
       }
       #tabs {
-        
+  	width: 100%;
+    	margin: 0;
+	-webkit-user-select: none;
+  	-moz-user-select: none;
+  	-ms-user-select: none;
+  	user-select: none;
+      }
     </style>
   </head>
   <body>
