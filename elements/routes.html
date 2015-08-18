@@ -1,0 +1,22 @@
+<script src="../bower_components/page/page.js"></script>
+
+<script>
+  window.addEventListener('WebComponentReady', function() {
+    
+    page('/', function() {
+      mcuin.github.io.route = "home";
+    });
+   
+    page('/about', function() {
+      mcuin.github.io.route = "about";
+    });
+  
+    page('/projects', function() {
+      mcuin.github.io.route = "projects";
+    });
+
+    page({
+      hashbang: true
+    });
+  });
+</script>
