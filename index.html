@@ -10,6 +10,84 @@
   </head>
   <body unresolved class="fullbleed layout vertical">
     <span id="browser-sync-binding"></span>
+    <template is="dom-bind" id="site">
+      
+      <paper-drawer-panel id="drawer">
+        <paper-scroll-header-panel drawer fixed>
+        
+      	  <paper-toolbar id="drawerToolbar">
+	    <span class="paper-font-title">Menu</span>
+          </paper-toolbar>
+
+          <paper-menu class="list" attr-for-selected="data-route" selected="{{route}}" on-iron-select="onMenuSelect">
+ 	    <a data-route="home" href="/">
+	      <iron-icon icon="home"></iron-icon>
+	      <span>Home</span>
+	    </a>
+	
+	    <a data-route="about" href="/about">
+	      <iron-icon icon="info"></iron-icon>
+ 	      <span>About</span>
+  	    </a>
+
+	    <a data-route="projects" href="/projects">
+	      <iron-icon icon="build"></iron-icon>
+	      <span>Projects</span>
+ 	    </a>
+
+	    <a data-route="contact" href="/contact">
+	      <iron-icon icon="mail"></iron-icon>
+	      <span>Contact</span>
+	    </a>
+  	  </paper-menu>
+	</paper-scroll-header-panel>
+
+	<paper-scroll-header-panel main condenses keep-condensed-header>
+	  
+	  <paper-toolbar id="mainToolbar">
+	    <paper-icon-button id="paperToggle" icon="menu" paper-drawer-toggle></paper-icon-button>
+	    <span class="flex"></span>
+	    <paper-icon-button icon="refresh"></paper-icon-button>
+	    <div class="middle middle-container center horizontal layout">
+ 	      <div class="site-name">Mykal Cuin</div>
+	    </div>
+	    <div class="bottom bottom-container center horizontal layout">
+	      <div class="bottom-title paper-font-subhead">Software Engineer</div>
+	    </div>
+	  </paper-toolbar>
     
+	  <div class="content">
+	    <iron-pages attr-for-selected="data-route" selected="{{route}}">
+
+	      <section data-route="home">
+		<paper-material elevation="1">
+		  <p class="paper-font-body2">Hello World!</p>
+		</paper-material>
+	      </section>
+
+	      <section data-route="about">
+		<paper-material elevation="1">
+		  <p class="paper-font-body2">Hello About!</p>
+		</paper-material>
+	      </section>
+
+	      <section data-route="projects">
+		<paper-material elevation="1">
+		  <p class="paper-font-body2">Hello Projects!</p>
+		</paper-material>
+	      </section>
+
+	      <section data-route="contact">
+		<paper-material elevation="1">
+		  <p class="paper-font-body2">Hello Contact!</p>
+	      </section>
+	    </iron-pages>
+	  </div>
+	</paper-scroll-header-panel>
+      </paper-drawer-panel>
+    </template>
+
+    <script src="javascript/site.js"></script>
+
   </body>
 </html>

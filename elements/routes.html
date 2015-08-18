@@ -4,15 +4,19 @@
   window.addEventListener('WebComponentReady', function() {
     
     page('/', function() {
-      mcuin.github.io.route = "home";
+      site.route = "home";
     });
    
     page('/about', function() {
-      mcuin.github.io.route = "about";
+      site.route = "about";
     });
   
     page('/projects', function() {
-      mcuin.github.io.route = "projects";
+      site.route = "projects";
+    });
+
+    page('/contact', function() {
+      site.route = "contact";
     });
 
     page({
