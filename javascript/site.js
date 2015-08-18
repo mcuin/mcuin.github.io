@@ -19,7 +19,7 @@
     var scaleBottom = 1 - yRatio;
     Polymer.Base.transform('translate3d(0,' + yRatio * 100 + '%,0)', middleContainer);
     Polymer.Base.transform('scale(' + scaleBottom + ') translateZ(0)', bottomContainer);
-    Polymer.Base.transform('scale(' + scaleMiddle + ') translateZ(0)', appName);
+    Polymer.Base.transform('scale(' + scaleMiddle + ') translateZ(0)', name);
   });
 
   site.onMenuSelect = function() {
