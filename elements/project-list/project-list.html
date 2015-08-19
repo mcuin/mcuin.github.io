@@ -1,0 +1,36 @@
+<dom-module id="project-list">
+  <style>
+    :host {
+      display: block;
+    }
+  </style>
+  <template>
+    <ul>
+      <template is="dom-repeat" items="{{items}}">
+        <li><span class="paper-font-body1">{{item}}</span></li>
+      </template>
+    </ul>
+  </template>
+
+  <script>
+    (function () {
+      Polymer({
+        is: 'project-list',
+        properties: {
+          items: {
+            type: Array,
+            notify: true,
+          }
+        },
+        ready: function() {
+          this.items = [
+            'Memory Calculator: (Android/iOS) A simple calculator application that stores and recalls answers.',
+	    'TextBack: (Android) An application that sends a text message auto reply in return to a text message when recieved.',
+	    'Personal Website: (HTML5/Polymer) This website.'
+          ];
+        }
+      });
+    })();
+  </script>
+
+</dom-module>
