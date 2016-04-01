@@ -1,6 +1,6 @@
 {
   "name": "social-media-icons",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "homepage": "https://github.com/hejty/social-media-icons",
   "authors": [
     "Lubos Belak"
@@ -25,14 +25,13 @@
   "dependencies": {
     "polymer": "Polymer/polymer#^1.0.0"
   },
-  "_release": "1.0.1",
+  "_release": "1.0.3",
   "_resolution": {
     "type": "version",
-    "tag": "v1.0.1",
-    "commit": "ffb1c8cf1436fcb451a6169dffd50a658c5acfbd"
+    "tag": "v1.0.3",
+    "commit": "bb48cbfe898e922d8c842585e2c1272cb93ad271"
   },
   "_source": "git://github.com/hejty/social-media-icons.git",
   "_target": "~1.0.1",
-  "_originalSource": "social-media-icons",
-  "_direct": true
+  "_originalSource": "social-media-icons"
 }
